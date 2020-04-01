@@ -28,12 +28,11 @@ npm i prettier eslint --save-dev
     "semi": false,
     "singleQuote": true,
     "jsxSingleQuote": true,
-    "endOfLine": "lf",
-    "parser": "typescript"
+    "endOfLine": "lf"
   },
   "scripts": {
     "eslint": "eslint ./",
-    "prettier": "prettier --write src/**/*.js"
+    "prettier": "prettier --write ./**/*.js"
   }
 }
 ```

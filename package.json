@@ -12,8 +12,7 @@
     "semi": false,
     "singleQuote": true,
     "jsxSingleQuote": true,
-    "endOfLine": "lf",
-    "parser": "typescript"
+    "endOfLine": "lf"
   },
   "repository": {
     "type": "git",
