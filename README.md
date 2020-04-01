@@ -32,8 +32,8 @@ npm i prettier eslint --save-dev
     "parser": "typescript"
   },
   "scripts": {
-    "eslint": "eslint --ext=jsx,ts,tsx ./src",
-    "prettier": "prettier --write src/**/*.{ts,tsx,js}"
+    "eslint": "eslint ./",
+    "prettier": "prettier --write src/**/*.js"
   }
 }
 ```
