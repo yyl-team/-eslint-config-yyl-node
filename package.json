@@ -1,0 +1,39 @@
+{
+  "name": "eslint-config-yyl-node",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint --config ./eslintrc.json --ext=js ./test/base",
+    "prettier": "prettier --write ./test/base/**/*.js",
+    "test": "npm run eslint && npm run prettier && npm run eslint"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "endOfLine": "lf",
+    "parser": "typescript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackness1208/eslint-config-yyl-node.git"
+  },
+  "author": "jackness",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackness1208/eslint-config-yyl-node/issues"
+  },
+  "homepage": "https://github.com/jackness1208/eslint-config-yyl-node#readme",
+  "dependencies": {
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-vue": "^6.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "prettier": "^2.0.2"
+  }
+}
