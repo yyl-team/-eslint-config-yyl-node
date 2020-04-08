@@ -18,12 +18,9 @@ npm i prettier eslint --save-dev
   "eslintConfig": {
     "extends": ["yyl-node"]
   },
-  "eslintIgnore": {
-    "node_modules",
-    "/dist",
-    "/test",
-    "**/js/lib"
-  },
+  "eslintIgnore": [
+    "node_modules"
+  ],
   "prettier": {
     "semi": false,
     "singleQuote": true,
@@ -36,7 +33,7 @@ npm i prettier eslint --save-dev
   }
 }
 ```
-> 为了和 prettier 不打架，请按照 `package.json` 的 `prettier` 属性进行配置
+> 为了和 `prettier` 不打架，请按照 `package.json` 的 `prettier` 属性进行配置
 
 ## 自定义 prettier
 可以通过定义 `prettier/prettier` rules 来修改
@@ -53,4 +50,10 @@ npm i prettier eslint --save-dev
     "semi": true
   }
 }
+```
+
+## prettierignore
+根目录创建 `.prettierignore`
+```
+node_modules/
 ```
