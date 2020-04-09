@@ -8,7 +8,6 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-    "semi": ["error", "never"],
     "node/no-unpublished-require": [
       0
     ],
@@ -42,10 +41,6 @@
     ],
     "node/prefer-promises/dns": "error",
     "node/prefer-promises/fs": 0,
-    "quote-props": [
-      "error",
-      "consistent"
-    ],
     "no-empty": [
       "error",
       {
@@ -64,7 +59,8 @@
       "singleQuote": true,
       "jsxSingleQuote": true,
       "endOfLine": "lf",
-      "quoteProps": "consistent"
+      "quoteProps": "consistent",
+      "trailingComma": "none"
     }]
   }
 }

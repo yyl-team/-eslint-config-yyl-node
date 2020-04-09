@@ -1,19 +1,21 @@
 {
   "name": "eslint-config-yyl-node",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "eslint": "eslint --config ./eslintrc.json --ext=js ./test/base",
+    "eslint": "eslint --config ./.eslintrc.json --ext=js ./test/base",
     "prettier": "prettier --write ./test/base/**/*.js",
-    "test": "npm run eslint && npm run prettier && npm run eslint"
+    "test": "npm run eslint && npm run prettier && npm run eslint",
+    "prepublishOnly": "npm test"
   },
   "prettier": {
     "semi": false,
     "singleQuote": true,
     "jsxSingleQuote": true,
     "endOfLine": "lf",
-    "quoteProps": "consistent"
+    "quoteProps": "consistent",
+    "trailingComma": "none"
   },
   "repository": {
     "type": "git",

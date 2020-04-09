@@ -25,7 +25,8 @@ npm i prettier eslint --save-dev
     "semi": false,
     "singleQuote": true,
     "jsxSingleQuote": true,
-    "endOfLine": "lf"
+    "endOfLine": "lf",
+    "trailingComma": "none"
   },
   "scripts": {
     "eslint": "eslint ./",
