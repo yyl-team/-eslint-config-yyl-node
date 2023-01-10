@@ -1,7 +1,11 @@
 {
   "name": "eslint-config-yyl-node",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "",
+  "maintainers": [{
+    "name": "jackness1208",
+    "email": "jackness1208@qq.com"
+  }],
   "main": "index.js",
   "scripts": {
     "eslint": "eslint --config ./.eslintrc.json --ext=js ./test/base",
@@ -27,15 +31,19 @@
     "url": "https://github.com/jackness1208/eslint-config-yyl-node/issues"
   },
   "homepage": "https://github.com/jackness1208/eslint-config-yyl-node#readme",
+  "peerDependencies": {
+    "eslint": ">=8.0.0",
+    "prettier": ">=2.0.0",
+    "typescript": ">=4.1.3"
+  },
   "dependencies": {
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-html": "^6.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-vue": "^6.2.2"
+    "eslint-plugin-prettier": "^4.2.1"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "prettier": "^2.0.2"
+    "eslint": "^8.7.0",
+    "prettier": "^2.5.1"
   }
 }
