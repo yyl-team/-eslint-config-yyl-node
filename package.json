@@ -9,6 +9,11 @@
     }
   ],
   "main": "eslint.config.js",
+  "files": [
+    "eslint.config.js",
+    "prettier.config.mjs",
+    "README.md"
+  ],
   "type": "module",
   "scripts": {
     "u": "yarn upgrade-interactive --latest",
@@ -16,15 +21,6 @@
     "prettier": "prettier --write ./",
     "test": "npm run eslint && npm run prettier && npm run eslint",
     "prepublishOnly": "npm test"
-  },
-  "prettier": {
-    "tabWidth": 2,
-    "semi": false,
-    "singleQuote": true,
-    "jsxSingleQuote": true,
-    "endOfLine": "lf",
-    "quoteProps": "consistent",
-    "trailingComma": "none"
   },
   "repository": {
     "type": "git",
