@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import globals from 'globals'
 import pluginJs from '@eslint/js'
 import tseslint from 'typescript-eslint'
@@ -65,7 +66,7 @@ export default [
       'eqeqeq': ['error', 'always', { null: 'ignore' }],
       'func-call-spacing': ['error', 'never'],
       'generator-star-spacing': ['error', { before: true, after: true }],
-      'indent': 0,
+      'indent': 'off',
       'key-spacing': ['error', { beforeColon: false, afterColon: true }],
       'keyword-spacing': ['error', { before: true, after: true }],
       'lines-between-class-members': [
@@ -246,6 +247,8 @@ export default [
       'eol-last': 0,
       'space-before-function-paren': 0,
       'camelcase': 0,
+      'no-use-before-define': 'off',
+      'no-alert': 'warn',
 
       'import/export': 'error',
       'import/first': 'error',
@@ -256,8 +259,11 @@ export default [
       'import/no-duplicates': 'error',
       'import/no-named-default': 'error',
       'import/no-webpack-loader-syntax': 'error',
+      'import/no-named-as-default': 'off',
+      'import/named': 'off',
 
       'promise/param-names': 'error',
+
       'n/handle-callback-err': ['error', '^(err|error)$'],
       'n/no-callback-literal': 'error',
       'n/no-deprecated-api': 'error',
@@ -265,6 +271,9 @@ export default [
       'n/no-new-require': 'error',
       'n/no-path-concat': 'error',
       'n/process-exit-as-throw': 'error',
+      'n/no-unpublished-require': 'off',
+      'n/no-unpublished-import': 'off',
+      'n/no-extraneous-import': 'off',
 
       'prettier/prettier': [
         'error',
@@ -273,15 +282,14 @@ export default [
           semi: false,
           singleQuote: true,
           jsxSingleQuote: true,
-          parser: 'typescript',
+          endOfLine: 'lf',
           quoteProps: 'consistent',
-          trailingComma: 'none',
-          printWidth: 100
+          trailingComma: 'none'
         }
       ],
-      'no-use-before-define': 'off',
-      '@typescript-eslint/no-use-before-define': ['error'],
-      'no-alert': 'warn'
+
+      '@typescript-eslint/no-require-imports': 'off',
+      '@typescript-eslint/no-use-before-define': ['error']
     }
   }
 ]

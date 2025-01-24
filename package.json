@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yyl-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "maintainers": [
     {
@@ -13,11 +13,12 @@
   "scripts": {
     "u": "yarn upgrade-interactive --latest",
     "eslint": "eslint --config ./eslint.config.js ./test/base",
-    "prettier": "prettier --write ./test/base/**/*.js",
+    "prettier": "prettier --write ./",
     "test": "npm run eslint && npm run prettier && npm run eslint",
     "prepublishOnly": "npm test"
   },
   "prettier": {
+    "tabWidth": 2,
     "semi": false,
     "singleQuote": true,
     "jsxSingleQuote": true,
